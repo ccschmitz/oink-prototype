@@ -8,26 +8,23 @@
 
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/app.css">
 
         <script src="js/libs/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-        
-        <script type="text/x-handlebars">
-            <header class="header">
-                <h1>{{appName}}</h1>
-            </header>
 
-            <div class="main">
-                <h2>{{title}}</h2>
-            </div>
+        <header>
+            <h1>Igor's Blog</h1>
+        </header>
 
-            <footer class="footer">
+        <div>
+            {{outlet}}
+        </div>
 
-            </footer>
-        </script>
+        <footer>
+            &copy;2013 Igor's Publishing, Inc.
+        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js"><\/script>')</script>
