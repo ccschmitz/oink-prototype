@@ -1,11 +1,9 @@
-// window.Ember = {};
-// Ember.EXTEND_PROTOTYPES = false;
-
-window.App = Ember.Application.create();
+App = Ember.Application.create({
+  LOG_TRANSITIONS: true
+});
 
 App.ApplicationRoute = Ember.Route.extend({
   setupController: function(controller) {
-    // `controller` is the instance of ApplicationController
     controller.set('title', "Hello world!");
   }
 });
