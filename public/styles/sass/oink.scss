@@ -50,8 +50,6 @@ img {
 @import "breakpoints";
 @import "mixins";
 
-@import "navbar";
-@import "forms";
 @import "tables";
 
 
@@ -454,9 +452,7 @@ ul.transactions {
 }
 
 
-
-
-//  Clear
+// Clear
 .clear:after {
   content: "";
   display: table;
